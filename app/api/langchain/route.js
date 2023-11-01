@@ -2,6 +2,7 @@ import { ChatOpenAI } from "langchain/chat_models/openai";
 import { HumanMessage } from "langchain/schema";
 
 const runLLMChain = async (prompt) => {
+    console.log("prompt structure in chatbot", prompt);
     const encoder = new TextEncoder();
 
     const stream = new TransformStream();
